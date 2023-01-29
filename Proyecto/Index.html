@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <link rel="icon" type="image/x-icon" href="FavIcon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Mulish:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/361ce227dc.js" crossorigin="anonymous"></script>
+    <title>Terrance Garcia</title>
+</head>
+<body>
+    <h1>Terrance Garcia</h1>
+    <div>    
+        <div class="columna_izq">
+
+            <img src="FotoPerfil.jpg" alt="Foto de Perfil" id="fotodeperfil">
+
+            <h2>Datos Personales</h2>
+            <div>
+                <ul>
+                    <li><i class="fa-solid fa-calendar-days"></i>   Fecha de Nacimiento: 12/5/1993</li>
+                    <li><i class="fa-solid fa-location-dot"></i>    Dirección: 1773 Spring Hill Rd</li>
+                    <li><i class="fa-solid fa-earth-americas"></i>  Nacionalidad: Estadounidense</li>
+                    <li><i class="fa-solid fa-phone"></i>   Teléfono: (672) 513-8461</li>
+                    <li><i class="fa-solid fa-envelope"></i>    E-mail: terrance.garcia@example.com</li>
+                </ul>
+            </div>
+        
+            <h3>Resumen Perfil</h3>
+
+            <p id="inforesumen"> Programador con más de cinco años de experiencia generando código para empresas del sector bancario. 
+                Creé el nuevo portal web de Santander, el cual recibe más de 1 millón de visitas al día. 
+                Los errores reportados en los micrositios del banco se redujeron en un 20% y la retención de usuarios incrementó en un 10%. 
+                Especialista en solución de problemas y trabajo en equipo.
+            </p>
+
+            <button id="info1" onclick="mostrarInfo()" >Mostrar</button>
+            
+            <button id="info2" onclick="ocultarInfo()" >Ocultar</button>
+
+            <script>
+                function mostrarInfo() {
+                    document.getElementById("inforesumen").style.display = "block"
+                    document.getElementById("info1").style.display = "none" 
+                    document.getElementById("info2").style.display = "block"
+                }
+
+                function ocultarInfo() {
+                    document.getElementById("inforesumen").style.display = "none"
+                    document.getElementById("info1").style.display = "block" 
+                    document.getElementById("info2").style.display = "none"
+                }
+           </script>
+
+        </div>
+
+        <div class="columna_med">
+            <h2>Datos Academicos</h2>
+
+            <ul> 
+               <li> Ingeniería Técnica en Informática de Sistemas <br> 
+                Universidad Complutense de Madrid <br>
+                2012 - 2015</li> <br>
+                <ul>
+                    <li>Graduado con la nota más alta de la generación.</li> 
+                    <li>3er lugar en el Hackaton CodeFest 2014.</li>
+                    <li>Creador del blog www.codigoinfinito.com, especializado en consejos de programación y seguridad web.</li>
+                    <li>Ganador de la beca de Excelencia Académica 2012.</li>
+                </ul>
+            </ul>
+
+            <h2>Experiencia Laboral</h2>
+
+            <ul>
+                <li></i>Desarrollador Web<br>
+                    Flame Analytics<br>
+                    Enero 2016 - Agosto 2017</li><br>
+                    <ul>
+                        <li>Escribí el código una página web con la capacidad de recibir a más de un millón de usuarios diariamente.</li>
+                        <li>Responsable de crear un comparador de tarjetas de crédito que elevó las ventas de producto en un 15%.</li>
+                        <li>Desarrollé una aplicación bancaria especializada en seguros de auto la cual recibió una calificación de 4.8 estrellas.</li>
+                    </ul><br>
+                <li>Programador Web<br>
+                    Banco Santander<br>
+                    Agosto 2017 - Diciembre 2019</li><br>
+                    <ul>
+                        <li>A lo largo de mi estancia, participé en más de 15 proyectos digitales y colaboré con un equipo de diseñadores, copywriters creativos, project managers y Q&A testers.</li>
+                        <li>Reduje el porcentaje de errores mensuales de la página de inicio del portal de la compañía en un 10%.</li>
+                        <li>Como parte del comité de mejoras continuas de la empresa, colaboré para optimizar los tiempos de carga de la página web en un 15%.</li>    
+                    </ul>
+            </ul>
+
+            <h2>Habilidades</h2>
+
+            <ul>
+                <li><i class="fa-solid fa-code"></i></i>Dominio de PHP, MySQL, HTML5, CSS3 y Javascript</li>
+                <li><i class="fa-solid fa-database"></i>Conocimiento de las bases de datos MySQL, PostgreSQL</li>
+                <li><i class="fa-solid fa-users"></i>Capacidad de liderazgo y trabajo en equipo</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
